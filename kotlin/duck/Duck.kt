@@ -1,11 +1,15 @@
 open class Duck(var name: String) {
 
-    fun quack() {
+    open fun quack() {
         println("$name is quacking")
     }
 
     fun swim() {
         println("$name is swimming")
+    }
+
+    open fun fly() {
+        println("$name is flying")
     }
 
     fun display() {
