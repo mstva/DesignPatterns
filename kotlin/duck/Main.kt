@@ -22,13 +22,10 @@ fun main() {
     rubber.display()
     rubber.quack()
     rubber.swim()
-    rubber.fly()
 
     println("========================")
 
     val decoy = DecoyDuck("Rubber Duck")
     decoy.display()
-    decoy.quack()
     decoy.swim()
-    decoy.fly()
 }
