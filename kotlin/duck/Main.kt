@@ -2,10 +2,10 @@
 
 fun main() {
 
-    val mollard = MollardDuck("Mollard Duck")
-    mollard.display()
-    mollard.quack()
-    mollard.swim()
+    val mallard = MallardDuck("Mallard Duck")
+    mallard.display()
+    mallard.quack()
+    mallard.swim()
 
     val redhead = RedheadDuck("Redhead Duck")
     redhead.display()
