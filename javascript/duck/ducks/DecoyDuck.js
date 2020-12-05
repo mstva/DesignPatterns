@@ -1,17 +1,13 @@
-import {Duck} from "./Duck.js";
+import {generalBehavior} from "../behaviors/GeneralBehavior.js";
+import {flyBehavior} from "../behaviors/FlyBehavior.js";
+import {quackBehavior} from "../behaviors/QuackBehavior.js";
 
-export class DecoyDuck extends Duck{
-    constructor(name) {
-        super(name);
-    }
-
-    quack() {
-        super.quack();
-        console.log(this.name + ' is not quacking')
-    }
-
-    fly() {
-        super.fly();
-        console.log(this.name + ' is not flying')
+export function DecoyDuck(name) {
+    const duck = { name: name }
+    return {
+        ...duck,
+        ...generalBehavior(duck),
+        ...flyBehavior(duck),
+        ...quackBehavior(duck)
     }
 }

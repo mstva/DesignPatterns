@@ -5,36 +5,29 @@ import { DecoyDuck } from "./ducks/DecoyDuck.js";
 
 function main() {
 
-    let mallard = new MallardDuck("MallardDuck")
-    let redhead = new RedheadDuck("RedheadDuck")
-    let rubber = new RubberDuck("RubberDuck")
-    let decoy = new DecoyDuck("DecoyDuck")
-
+    const mallard = new MallardDuck("MallardDuck")
     mallard.display()
-    mallard.quack()
     mallard.swim()
-    mallard.fly()
+    mallard.quack()
+    mallard.flyWithWings()
 
-    console.log("============================")
-
+    const redhead = RedheadDuck("RedheadDuck")
     redhead.display()
-    redhead.quack()
     redhead.swim()
-    redhead.fly()
+    redhead.squeak()
+    redhead.flyWithWings()
 
-    console.log("============================")
-
+    const rubber = RubberDuck("RubberDuck")
     rubber.display()
     rubber.swim()
     rubber.quack()
-    rubber.fly()
+    rubber.flyNoWay()
 
-    console.log("============================")
-
+    const decoy = DecoyDuck("DecoyDuck")
     decoy.display()
     decoy.swim()
-    decoy.quack()
-    decoy.fly()
+    decoy.muteQuack()
+    decoy.flyNoWay()
 }
 
 console.log(main())
