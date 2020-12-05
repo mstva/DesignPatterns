@@ -1,5 +1,0 @@
-interface Quackable {
-
-    fun quack() {}
-
-}

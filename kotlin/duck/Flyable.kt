@@ -1,5 +1,0 @@
-interface Flyable {
-
-    fun fly() {}
-
-}
