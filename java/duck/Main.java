@@ -1,15 +1,36 @@
+import ducks.*;
+
 public class Main {
 
     public static void main(String[] args) {
+        Duck mallard = new MallardDuck("Mallard Duck");
+        mallard.display();
+        mallard.swim();
+        mallard.performFly();
+        mallard.performQuack();
 
-        MollardDuck mollard = new MollardDuck("Mollard Duck");
-        mollard.display();
-        mollard.quack();
-        mollard.swim();
+        System.out.println("============================");
 
-        RedheadDuck redhead = new RedheadDuck("Redhead Duck");
+        Duck redhead = new RedheadDuck("Redhead Duck");
         redhead.display();
-        redhead.quack();
         redhead.swim();
+        redhead.performFly();
+        redhead.performQuack();
+
+        System.out.println("============================");
+
+        Duck rubber = new RubberDuck("Rubber Duck");
+        rubber.display();
+        rubber.swim();
+        rubber.performFly();
+        rubber.performQuack();
+
+        System.out.println("============================");
+
+        Duck decoy = new DecoyDuck("Decoy Duck");
+        decoy.display();
+        decoy.swim();
+        decoy.performFly();
+        decoy.performQuack();
     }
 }
